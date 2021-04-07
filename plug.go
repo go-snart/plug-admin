@@ -21,7 +21,7 @@ func (a *Admin) Plug(b *snart.Bot) error {
 		Cat:   a.String(),
 		Func:  a.Restart,
 		Hide:  true,
-		Flags: nil,
+		Flags: struct{}{},
 	})
 
 	log.Println("added routes")
